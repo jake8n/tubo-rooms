@@ -1,0 +1,24 @@
+{
+  "name": "cm-server",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "start": "PORT=7000 node index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "nodemon": "^2.0.5",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0"
+  }
+}
