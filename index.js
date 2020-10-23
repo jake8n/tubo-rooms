@@ -11,4 +11,4 @@ io.on("connection", (socket) => {
     docs.set(room, doc);
   });
 });
-io.listen(process.env.SNOWPACK_PUBLIC_WSS_PORT);
+io.listen(process.env.PORT);

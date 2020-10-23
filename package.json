@@ -2,7 +2,7 @@
   "name": "cm-server",
   "version": "0.0.0",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "PORT=7000 nodemon index.js",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
     "start": "PORT=7000 node index.js"
