@@ -10,7 +10,6 @@ io.on("connection", (socket) => {
   ["js", "html", "css"].forEach((value) => {
     socket.emit(`init:${value}`, docs.get(room)[value]);
     socket.on(`update:${value}`, (changes) => {
-      console.log("update", value);
       socket.to(room).emit(`update:${value}`, changes);
     });
     socket.on(`sync:${value}`, (doc) => {
