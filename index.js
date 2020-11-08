@@ -19,4 +19,4 @@ io.on("connection", (socket) => {
     });
   });
 });
-io.listen(process.env.PORT);
+io.listen(process.env.PORT || 80);
