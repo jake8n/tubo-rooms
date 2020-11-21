@@ -5,7 +5,7 @@
     "dev": "PORT=7000 nodemon index.js",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
-    "start": "PORT=7000 node index.js"
+    "start": "node index.js"
   },
   "husky": {
     "hooks": {
