@@ -20,6 +20,10 @@ io.on("connection", (socket) => {
     socket.on("transaction", (transaction) =>
       socket.to(room).emit("transaction", transaction)
     );
+
+    socket.on("set-active-tab", (id) =>
+      socket.to(room).emit("set-active-tab", id)
+    );
   });
 });
 
