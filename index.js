@@ -10,6 +10,7 @@ io.on("connection", (socket) => {
       socket.to(room).emit("request-for-state");
     }
 
+    // TODO: reply directly to whomever made request
     socket.on("response-for-state", (value) =>
       socket.to(room).emit("room-joined", value)
     );
