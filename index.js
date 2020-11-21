@@ -1,4 +1,6 @@
-const io = require("socket.io")({});
+const io = require("socket.io")({
+  origins: "*:*",
+});
 
 io.on("connection", (socket) => {
   socket.on("join-room", (room) => {
