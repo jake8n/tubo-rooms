@@ -24,6 +24,8 @@ io.on("connection", (socket) => {
     socket.on("set-active-tab", (id) =>
       socket.to(room).emit("set-active-tab", id)
     );
+
+    socket.on("new-file", (path) => socket.to(room).emit("new-file", path));
   });
 });
 
