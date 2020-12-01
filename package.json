@@ -1,5 +1,5 @@
 {
-  "name": "cm-server",
+  "name": "tubo-rooms",
   "version": "0.0.0",
   "scripts": {
     "dev": "PORT=7000 nodemon index.js",
